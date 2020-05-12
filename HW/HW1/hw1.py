@@ -28,10 +28,14 @@ def force(x):
     
     
     
-plt.plot(x,lj(x1)/epsilon)
-plt.plot(x,force(x1),'--')
+plt.plot(x,lj(x1)/epsilon,label='LJ potential')
+plt.plot(x,force(x1),'--',label='Force')
 plt.plot([0.5,3],[0,0],'black')
 plt.ylim(-1.5,2.5)
 plt.xlim(0.5,3)
+plt.legend()
+plt.title('Lennard-Jones potential')
+plt.ylabel('V(r)/ε  F(r)/ε')
+plt.xlabel('r/σ')
 plt.savefig('LJ.png')
 plt.clf()
