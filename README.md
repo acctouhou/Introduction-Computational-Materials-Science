@@ -16,5 +16,5 @@ Adding normal distribution velocity
 ![velocity](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW3/V.gif)  
 * Homework04  
 
-Lennard-Jones potential equilibrium
+Lennard-Jones potential equilibrium  
 ![Lennard-Jones](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW4/HW4.gif)  
