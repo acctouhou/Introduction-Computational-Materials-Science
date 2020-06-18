@@ -10,8 +10,8 @@
 #include <cmath>
 
 const double rcp = 3; 
-double dt = 0.00005; 
-double runtime = 10.0; 
+double dt = 0.00001; 
+double runtime = 0.2; 
 long seed = 10; 
 const int dump = 1000;
 double K; 
@@ -278,6 +278,15 @@ void run()
 		avgH2 = sumH2 / numPoints;
 		fluctH = sqrt(avgH2 - avgH * avgH);
 
+		
+		FILE *outfile;
+
+		outfile = fopen("history.log", "a");
+
+		fprintf(outfile, "%8.6f %8.6f %8.6f \n",
+			count*dt, U / N, K / N);
+		fclose(outfile);
+		
 		printf("%8.6f %8.6f %8.6f %8.6f %8.6f %8.6f\n",
 			count*dt, H / N, U / N, K / N, T, fluctH / N);
 	}
@@ -288,6 +297,11 @@ int main()
 
 	printf("\n#N=%d L=%lf T=%lf runtime=%lf dt=%lf ",
 		N, L, T, runtime, dt);
+	FILE *outfile;
+
+	outfile = fopen("history.log", "w");
+	fprintf(outfile,"");
+	fclose(outfile);
 	run();
 	return 0;
 }
