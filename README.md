@@ -18,3 +18,7 @@ Adding normal distribution velocity
 
 Lennard-Jones potential equilibrium  
 ![Lennard-Jones](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW4/HW4.gif)  
+  
+  
+PE(KE) vs time during equilibrium
+![Lennard-Jones](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW4/pe_ke.png)  
