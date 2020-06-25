@@ -21,4 +21,8 @@ Lennard-Jones potential equilibrium
   
   
 PE(KE) vs time during equilibrium
-![Lennard-Jones](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW4/pe_ke.png)  
+![PE](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW4/pe_ke.png)  
+
+* Homework05   
+implement annealing on LAMMPS   
+![annealing](https://github.com/acctouhou/Introduction-Computational-Materials-Science/blob/master/HW/HW5/anneal.png)  
